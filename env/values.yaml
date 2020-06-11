@@ -16,6 +16,8 @@ expose:
     domain: 35.192.49.117.nip.io
     exposer: Ingress
     http: "true"
+    tlsacme: "false"
+    urltemplate: '{{.Service}}-{{.Namespace}}.{{.Domain}}'
 jenkins:
   Servers:
     Global: {}
